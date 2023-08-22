@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro';
+}
+
+li:hover {
+    color: #365d70;
+}
+
+#logo {
+    width: 300px;
+    height: auto;
+}
+
+#banner {
+    background-image: url('https://images.mubicdn.net/images/film/192643/cache-454819-1656347679/image-w1280.jpg?size=800x');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+/* https://www.guysgab.com/wp-content/uploads/2019/07/TG_Maverick.jpg */
+
+#trailer-container {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 70%;
+    /* height: 300px;
+    border: solid white ; */
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+    margin-left: 30px;
+}
+
+.description {
+    color: white;
+    font-size: 15.5px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 100%;
+    
+    text-align: justify;
+}
+
+.button {
+    width: 300px;
+    height: 60px;
+    background-color: #5d5e35;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #365d70;
+    color: black;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    row-gap: 10px; /* espacamento das linhas dos banners*/
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 30px;
+    color: rgb(255, 1, 1);
+    font-size: 15px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+
+.banner-1 {
+     background-image: url('https://portalpopline.com.br/wp-content/uploads/2022/05/top-gun-streaming.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://uploads.jovemnerd.com.br/wp-content/uploads/2019/07/top-gun-nova-foto.jpeg');
+}
+
+.banner-3 {
+    background-image: url('https://ovicio.com.br/wp-content/uploads/2022/09/20220905-ovicio-val-kilmer-iceman-top-gun-555x555.jpg');
+}
+
+.banner-4 {
+    background-image: url('https://64.media.tumblr.com/ae2c1c172fb46890a895b713d5d7fe6a/6a8d0d4b53475a42-40/s540x810/417af62cb99225f9921320845840ce173625e207.jpg');
+}
+
+.banner-5 {
+    background-image: url('https://qph.cf2.quoracdn.net/main-qimg-3f3dd87ea35cfa6f123da7bccdbb357b-lq');
+}
+
+.banner-6 {
+    background-image: url('https://www.themoviefashion.com/wp-content/uploads/2022/02/Monica-Barbaro-Top-Gun-2022-Phoenix-Brown-Cotton-Jacket.jpg');
+}
+
+.banner-7 {
+    background-image: url('https://44.media.tumblr.com/1edeee9330b87ae3a81c39d3f1fcae22/19a18435f5b9b17d-5c/s540x810_f1/c6560eedfe4bc6e90876705a429a589a48493491.gif');
+}
+
+.banner-8 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9DC03n_cudDT6Pt98Z59HYWkmWgg-EMj9Hkz_fwpH-1ft3ldSd7x-XAypKHBre68ifdE&usqp=CAU');
+}
+
+
+.banner-9 {
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgVFhYZGBgaGhwaHBwcGBoaHBwcGhgaHBocGiEcIS4lHh4rIRkaJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHBISHjQkISE0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0MTE0NDQ0NDQ0NDQ0NDQ0NDQ0NDQxNDQ0MTE0NP/AABEIARMAtwMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAFAAEDBAYCB//EADwQAAEDAgQEBAUCBQMDBQAAAAEAAhEDIQQFMUESUWFxIoGRoQaxwdHwMuETI0JS8RRichWCkgckM1Oi/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAJBEAAgICAgIBBQEAAAAAAAAAAAECEQMhEjFBUQQTIjJhcUL/2gAMAwEAAhEDEQA/APPAugmXSsghxOIDBzJ08kBe4kknVEMzqAkAbW9dvl6oapZSEkkkkMeVPTr6Sq66BOyADFMg3t5iPndTOe02aC494CBtBJi/ur9FzGXJ4n8tp5J2ImxGEfrDQO87eaoOaxup4jyFh5n7KWtiKj7mw/N/ZQ8UeFw89/MHX2KBkT6hPIDkLBRqWo3tG0aH7KJIBJJ2i66DZnogDhSMbIK5Iuu6QuOqAGmCCCQi+Dxl28RvpPyBQqobW/Psnpv29O+ydiZrmP5+X27rsoZk+I4mFpN2/gP5yRRWiGMkkEkxAxcVqga0k7JwULzKvJ4RtqoZaRScSTJ3XKSSkoSSSSAO2EbiVaBbs1p2G/1lR4ZrCfEHEf7SB8wpHUmDRxnkQD7tJQAzmxaHNO4LY+swqzo2/PVWG13C08Q5OAcPKdF1wtdfhg9LfsiwosUqnFTPMa/R3YiQeoHNUjJ8J02J1H7K3hsE8OEaHnoUYw2UuLhIi5Btbsel1LkWo2BsJgHODuSanhL7LZswgpjgIAOkn0gXv7LmjlYIeeoiLEneJ1UuZaxmKOH4fEVHRYde0+s/Ra3FZMCYgjlIgoe/LCLcJjpv9vzsmpWRKDRn3DforWGZAc47NMD6+pj/ALpVzE4Ug/pjtb57KF7CGkdp+3r8lZLRRjiFtQodFcqcJ1sdiqjwQYKBF3KK/DVH+7wn6LULGULOaeRHzWwaSriTI7SXEpJkAtz4E8kAc6SSd0Xx5hh6wPdB1DNEMkkkkMSQSARLAYMuvEnb8+qTdDSsr0WvGjfZX6WFqOgcLQfKfNaHLcgmHPny0/daTC5M0CwHndZyyI2jibMWzJXOIc8QTrrdGKWV0wOEtm2pEnp9FsqGVsjTQK1hcrAuLX2A3tb19yo5NmnBIwlLCuaYDfEARcHrrsTbXqj2SYEO4uI2MRtcAiY52+S0hy1vEbX9yTzVnC4IM0F/z7obbGkkZ3GZPxwYuZm3Mz+6mwuA4BGo6gLSvYIVd7BqokmXFoFPythHLtZA8fkV7X6SfotTUcq1VySk0Nxsw9fJZ/UHd72QfNMnfT8Q09vNeiOhU8fTaW300+n53VRm7M5Y1R5NWAJP9LuWx+xVRy0vxHlQYeIWWZIXTF2jlkqdHbD+/bda2i/wtOth8ljwVqMC+WM7BWjNlziTLkJKiQJmLvB3IQhF8dTLm22uhChloSSS6a2TCQy1gMMXvAC9AyfLmtAJFgPXqgPw/g9I1Ovn1WxaIECywyy8HThh5LLDsrjXWhUGEyrlN09lznUkFMIYRJrDGiG4QjnqijHmLLWJnPskp0+akLOqjDSdSlwdRCszGe4KBzhylWOAblRPaNbJMaKlanOiHYlhCLPQ7ErOSNosoQFTxwt+c1ee1UcWJEdVC7HJaAmd0uNhmDFus9PKFgMTTiV6Hmo8B5bj6jqsDjLO89R+arrxvRxZlTB5Wiyp38tvmPcrOuR7KZFMdytl2c76CPEko5SVElFBq7Ycdro0hmYshwPMfJSykU1PhzBUClpG/XRSUbXI3wBf3WkBBgrJZC8WP7nyWqEwDHVc2Xs7ML0X6TJVqlTVbBPRNjD2WSRu2S0WXlFaD1QpMgq9SpTdaRRnJlmE/wDCUjGLoLSjGysaJXDsON59VZOqcskJcUPkwVVogf5KpPYjj8OqVbDrOUTWMgU5hQ6vTujVaiR1QzENso4l2Asawlp/IXnWZiHkHmvUHuseawPxRhIIeN9e5W+KVOjnzRtWZ5y0GBPgb2CAMbJA5mF6fkmSU20WmoBJFyVs5qPZhHE59GXlJWs1wwpVXNbpqOxSWidqzJxadAhUswEgHktT8L5O2u9znmGMibxJOgPSy0GZ/CtF9N3A1sgWLdQQspZEnRtjwylHkjyZdtXdei5ji1wggwfJdYWnxOA6qiK3RqvhqmJC1zm72Q3J8LwMAsERqOEfJck3bO3GuMQjl7YvuilIEoNh8S1guQiFLNaYjxAJKJTkgpRpFEqTEFo5wyY3P1UozqmJ8Wi1ijKUrDaYvVGljw4wrAcnZKROwroVAqzXqLE1OEFFg0WqtUKnXrtGp91j84+I6jCWtbJ1te3P/ErL4rPKzz4muHYEDt1TqxXR6PicxYP6hogmIzOmSRKxT8c55uXTpeVK3Cue0HbveUcF5Dm/AbdWBPhMg+yDZ5hw6k4cgmo0HhwEyr2JZII5hTST0VbcdmJ+HKQOJpgiRJJ8gSvSn1C9wYLMaLdXG0rzz4epf+6aw/7h6A/SV6th6ABY6LSB9veEZHtD+P0zFfFoAxLmz+lrGnuGplRz3EceIqP5vI9LfRJdMFo48juTD3wQ9po4hk+I8JHl/hF3MfSrOLNCLjYhZD4QzAUsS3i/Q/wO89D6r05tIcb7Aw0Lmyqn/Tu+PJOFejzP43wLXN/jtBa4EBwO87rK5WP5je4Xp3xhRY6g8cPiAkfT0MHyXmGDs8Rs4KsbuJjlVTs9NwwsFBja/B3v81Ll5lkdF1WwnHPdZLTNXbWgC/HPcfooHuqdSTtv0Wgw2VM3bf8AOyMYXLmC7hPf6LTmkZ/TbMbSwuJcbT5kgK7hcmqE+N+vWT+63DnUGDxFrNhxuDZPIA3Poh9PMMNUcWsqMeeQMH37FJzl4KUI+TrAUHMAvMb80eo4kuVDDUxordKnDoU8m+y1FItuqFUcXipsiFal4UFe2eqUm0NJMF1xLoaBPOFPQykOFyTzSxNMtgmAXODW9ydeyyWe5ViKeJcHV3cDmkteWfxWkRo1oBDXTabEJxi5ClJLwaytkbPPyVE4ENJ0+SEfDeUVSx76j6lP9LWAueziI1dwzYad7q3hcPiWOLeP+II/rAkdjY+sokmvIJ34LzcCJlVMfQInp91oMNQcGgPADuiqZlQClPY60YHKcLw5gBtDnctR9yvS6rP5TuHUCR5XXn9WmRjKJGp4m8tiflK1mY47+FhnuuXcJEcibX9VrLbROOlGVnmxfNzukogUy6ThHa4i4XsPw/ihWptqbuptnuCQV45K2/wBmJ8VIHxN8bQd2n9Tfr5rLItX6N8EqlXs0mPw7S8CbbrybF4F1HEFhEcL7dRJAK9gxtNr+EskOJuDtzlee/GtECo1/wDVxBh8gXT8llCW6OjNFNX6D+VumFov9GIsszkb5ieS2GFfIWcuxx6AmNq8BgtcewQkYrE1Hw0fwWb/AN5HV0eHy9Vt61HjGyH1cve08bbjkhOgpMxmN+GqgxIe11d7HX46bpqCR+klxt4t9IR34V+G+ClUdiGu4nANa1xBc0NkhxdoDJtGgCL/AMZ//wBRntyThlVxszh/5GfQLXnoj6auzvJ6TwIfciOF0jxNjeNwd9xHVEaboeu8JhSwS8yfkqvHNSyzei1thp4Bb5IFh44yD/cjppng6LPv8L/NOXgIbssZjTBLXFgPCCG2sJiT3sFRdjqmnCY6QEcovDtU78G3UBNfoV1pgAPe6wZGupkwVZwuBLb7nUonTw8HRTOZASq+wcvQKqi6G5gfCfdHKlOyDZo2OyiikY57B/q8PIkcZn/wcVe+OcSBR4B/W9vsJ+yrBk4mn/tJP/4I+qDfGOPD63A0y1lv+46+wAW8VbRzzdRf7YDlJcApLoOU7VrLca6jVZUbq0+o3HoqiaUnspOtntOGxDXhlVtw4DTqNVkv/UDCNcwvaLyCY5gxPmCh/wAH5+GfyKhhhMscf6TyPRanO8F/FY8zIIsNhA1XI4uMjtUlONmcyWtoek+y22CfI7rz/JX8PDOot6FbfLatoRJbHB6D2HarbWSFUpEFTMcZshA0dupXUraY11TB66lUSVcbUtZDsK0cZKtY59ih2EqeKVm+zWK0ath8Hks3jxD1oGvHAs7mesrSfSIxrbLeCdIRJjkCwOJE8J1Rxg3URY5I6cVXqv5Lp5UNRwVNiSIXvsgeavBRPEVVns1qeEqEW9Iyuc5g6meNhhxDmgxpMLKF25Rr4hd4W90CldcFo4Zv7iSUlyCkqMiWU0rmUxKCjqUSwOd1qUBr3Fm7SZEeeiFylKGk+wTa6NTRNyRpqtRlWIloWOyipxM6gQtHlT4MLmmjsxvRs8NXkK3RegmGfB7otQKzTNWEG3UgVekp1aM2Bc+dADW/1Ez2Cr5QywU2fsgsdtofNBqme06Lg1x4ZtJBj/y0U+TRPRv8OGlsSgmaYeAV3hsyYWgyED+Js9DW+AFxJsBq48grbTREU0xnDfcLRZZW42NcVicDjqj2eNgDnaNaeIjvZbPLGFjGtOoF1C7Ll0WH2VOqVcqKlWclImIOxZWfzN/hKP4twWfzX6Ij2OXRifiM/oHdAwUX+JH+No5A/NBgV1x6OGf5MklJchJUSTJSmSQAkpSKYoAL/D9XxFvNavC2csLl9Xhe09Y9VucNUnhdz177+6wyLZ04noPYd9h3RfC1JQWgfzyRLDOhYeTp8BugVaCGUKykqY9oG+3uYCpSM5InxtBr2lrhIOyyON+HwZa0y3+0mY5ao3XzEkE6Aec9vmnw7HOcdgeE6dL/ACVdgnSMz/059Foa2Y5Tp25Kzg8G1/idci19lqzgmuaeKJP5uuGYRrCSQAPLojiFsFYSlTYbRxcjqizcQ0C5g/ZUq+FBlzSDM/cIBj6z2gzMeu+/Tqk9A3fZsP8AUNOhVLEOWbwWIfBdLYBEze1tALxujVKrxTFwB+yhjiyliHEiECzEwHIziHgSTosvneK4WucdACT3uGhOC2KbpGLzerxVXdIH3VMFM55JJOpM+qQK7EcT2dApJgnTETJSuZSlADkpLmUpQA4ctXkWL42Gf1A/t8oWSlW8trOa+R5hRNWi4SpnpGCxEj77WRXD1Fk8FjgQCDqP8o5l+JBGv4VzSidcZB5lQjRD61SWi9pLuhgnhn3kK7h3B1vyVZoZe1w4ToDMKYjkZo53hw9/FUaCDe4HIEH0Uj/jSmLMcO4Mn2RnMcjpRLWC2sAIK6i0Ouxvfh2/CStIpGmOKkOPidrwIdfkTB91Hic+kgNdxOAiBc68hdaTCUabmXY3TkPqpGUGM/Sxo7AfRXRppaMTiswxJPhouA5ucGfKVFg8Niqzw1zw1h3aPFHQn5rS5l4zDZE79OgRHKcIG7aQpk0icnFIhweRNpAEOcSBFzOl7qUNDA52k29ETxL7LO5pjRwxpv6799VmznQLx2IgE7SYHKP2CwHxHj+IhjSY1d9B+dEdzzMRBi5E/eD7LCvcSZOpW+ONGOSV6GTrlOtTA6BTJBJAEyUpkkwFKUpkkAJWcud/Mb3UdPDOdoLIhg8HBDvdTJ0tlQTb0F61Is8bdD+rpvIRDBYwWIMhS4dktQjH4V1M8TLs1I/tjcdFzp3pnU1W0bLLcffX8kfdaLD40SBNz7rzbKceNfkVsMJV4uHhgE6nedY/OihxpjjK0akuBQ/FYCbgX6KbDvO+sK2y+6Eyra6AFRmIY3wBpjmOXYpUKGJefG/hE6BoFu5WkY3mu5F/z81VA5sDYfLOEy4knqrzrCymc7mqtd9iVLFdlPHVtuhk3jT80WDzzGcOhjob3tv1BWozzMGtbztPTt6ErCMmtULo8LTPf8hXFeWRJ26RC7D8VNz3WLtOgI+dygVfBObfhDh6Fa7Hjw2UeHw4cNE1NrYpY09GaoZe17eIEjmNYKjr5S9tx4h01R3HZe5njZb+4cxv5qwxhBIG31W8JKSOacXFmLc0gwbJLWY3LWv2vN0lXEnkZhMkERwmVPfBIge6BlGnTLiGtEko7hsrDLvEuRTAZc1hAA7mNVZqUi5/TRNIlsH0sLxHhi2/2XeKo8IARvA4cQ49VUx1HUrlnK5NejtxxSiv2dYAy0KerRkaKrlekIuKaylpmsdoymNwBYeOmP8Ak36jqruSZpe57XiIKLYijKz+NwPi4m2cNOR7q4ytUzOUado9FwuYMOhk+3WFfZiheLxr6WXlWFzd9IeMaHy12hH8NnjSA4O1MX3E/sRKfH0JT9m6ZijAESY+yerXERN9ukRr7LI0s/abybdeYm3oPVLE/EDRJ3OlvkUUxuSNBjsZDbGLAwdRpY9fEEMfm8tcXawZ9vvM9+SyuO+JWOcZkunblAjzkKjVrVqxIuxk6meIxfTZHH2TyvomzDHPrP8A4beZ4iNAOfeCiGEwrWNDG6fPquMBhWsbDR3O57q8WWUSlekaRjW32DMyFl3lzLhNjRKv4ChICH+I0vuJcbhQabraAoMxu24In1WjzJ3DRM7wPUoA0/qdFtPPddHxl9rOX5T+5ImqQJIGkecpLkvDafURPXZMuk5QZluTgRDZPUIwzCBnieQI/pGvmrYrOcYAgRrp/hUXU3OJ5bn7IoLJH4wS08rAdF1iR4gQI3UTGBswPMiVaY1zmhxOmvkgDvAPbxR/dr3UmOoSCVUrU7+H1Hqr1Kvxtg/qC5M0KfJHZ8edriwPgxBI6o7SuEIqU+F6JYV6wls6o+iatSQzFUUdDVXxGFkJIckZqph56qD/AKawzYgn+0kIzUoEFOxnNVyojjfYKZlIJHjeANpHKNwpBk9MfqLnHq4/RF2sH4EnMCOT9gox9A9mDYweBgb2CcN2CtPZsu6GFm5SsqjmhTUlQWVoU4CrYhJDoG1Wy5HsDRhoQjDU+J6PVHhjCTyTfoS9gjPqoMM2Ak99B+dFRYNuRE21P3TVXl54ty6ew2VmmHNIOkX/AHJXdjjxikebllyk2VHVLAOgXJPoAAkmp1DqSIJJs2T6nRJaGZcfx6OdA+SRDI1POTN/LZNxgiDcJuISJ8Q5aDzQBYoO4QXR2J+gSqVbzxRO0ATzJVapUg3Exyso6bHGXWje0mPP6IAtV2ANABtMjp+yrNquB4gpsO6DBFjoTzTYqneQO7UpJNUwi3F2hqtcP77qzhHIXVpmRFjsZn1VvA1pPC6zh79QuOeNx/h34sql/TQ0TKsFqoYYmUQZdYHSyjWoAlRtw3REKjFw1pCYiqMLG3smdh+ivvcojJQCKjaAUjWcgpgxdcFkgK1RDsTyRDEu2VF7LoQ2dYKnw+IqDM8VxEMB117J8XigwRuUKY88RI9d7jU9l0YYW+TOXPk4riuybhAMg6Hvcz7WT1qhjgaD4tSdbE/nmo8Q5rQCDYW0Mzz7/sq9So6QSTfaIgcl1nCd+IDkJ03TrloH9RJHK+vVJAwgx427xMevNO9oi7fFyHzKYta24j7dVGKhvsJ1nU9TqUxDB3CTaT1Sq4qRwm3QBR1jJ4WC+pPXzt6pnMLBcyT3MJDGbUMES6PT2ClNU8PjBBOl9FVe60iR3P8AhS0HDhvBM7x7SiwocvPKf7hz6hO8aGLC0xccvNcOqwdJ52sB3Uge25B11vbzhAdFihmBZY+Ic9CPuj2BxrHiWuBWUrURqIgDY291AGlsFvh6j8usJ4U9rR0Q+RKOpbPQAUxhZClm1VhEO4mnfVXRnb9wCsHikvB0xzRfk0IEpcCDMz5u7SFKc/Zt8/sp4P0Vzj7Cxaon6IWfiFg1HzVSv8RzZrPU/ZCxyfgX1YrthV7EKxuJay5udhuVTqZrUfZpDedr+6qsoGZdJc7pJ91rDA/JlP5K/wAnDnueS7fleGgqWlDWkyLD1O57KJ7+BuoA9ztEDVVJNi4xew69dh2XUkkcbbk7LJql1+H/AIg27khd0iTciTsLKGk0kXOsXcdp5broPPEQCNNIEeRIsgCZ9XxCQXDlJA0SVZ8mAS0fL8snQAVLdPNV8QZdGw06JJJiO3agbKF5s524kDp5aJkkmM6f/wDDxf1Eam516qriqpAsYkx5ckkkAcU3mAJTYfX86pJIAu4GqZLZtOnkuMT4XlosOXkUkkxEzmDh0Vem6OIJJIYI6m3ko2PN780kkDGfUNxzjYTqN9VPhWDi0/LJJJCLlJgE22+qrAe8p0kwBmF8ReXXIsDyHJO5gltvyAkkkMsON46BQtebjl9kkkAV5uUkkkgP/9k=');
+}
+
+.banner-10 {
+    background-image: url('https://www.sunglassesid.com/sites/default/files/upload/sighting/ray-ban-caravan-john-hamm-top-gun-maverick.jpg');
+}
+
+.banner-11 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXxMcua6wMhlbr47d1DqZop0QyDnlM176DZQ9RlsiX2TN0icUL1fOhS-xDQWYXtDNbP0g&usqp=CAU');
+}
+
+.banner-12 {
+    background-image: url('https://www.g33kmania.com/wp-content/uploads/Film-top-gun-2-mickey-garcia-fanboy-308x493.jpg');
+}
+
+/* .banner-13 {
+    background-image: url('https://www.g33kmania.com/wp-content/uploads/Film-top-gun-2-amelia-benjamin.jpg');
+} */
+
+
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width:768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 70%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+    }
+}
+    
